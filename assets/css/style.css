@@ -3,10 +3,13 @@
     padding: 0;
     margin: 0;
 }
+/*Setting the padding and margin to 0 for the whole website, the border and padding will change as more specific styling is applied
+ (i.e. classes and id's)*/
 
 body {
     background-color: #d9dcd6;
 }
+/*this sets the background color behind the background image, the <section> elements, and the <aside> elements to a pale gray-ish color.*/
 
 header {
     padding: 20px;
@@ -14,11 +17,18 @@ header {
     background-color: #2a607c;
     color: #ffffff;
 }
+/*sets the padding for the header element, which includes the h1 header and the nav elements, to 20px. The same elements are also assigned
+ the font family 'Trebuchet MS' as the preffered font and going from left to right, the browser will apply the first font it is able to.
+The background color for the heading element is also set to a blue-gray color (#2a607c) and the font is set to white, but we will see a 
+more specific selector (#seon) change the 'seon' to a gray color.*/
 
 h1 {
     display: inline-block;
     font-size: 48px;
 }
+/*This sets the main header 'horiseon' to have a font size of 48 pixels and sets the display type to inline-block. If the display was just 'block' then
+the navbar content would not be able to sit on the same level as the main header and would have to be beneath it. inline-block allows us to define the 
+width so that is does not have to take up the whole width of the page.*/
 
 nav {
     padding-top: 15px;
@@ -27,60 +37,70 @@ nav {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/*this sets the prefered font for our navbar titles as 'Gill sans', the font size is set to 20 pixels, and the elements are set to float 
+in the right-hand side of its container. Also, a top padding is added as well as a margin. the padding will leave 15 pixels between the
+ top of the text and the top of the container and the margin will push away other elements on the right side by 20 pixels. */
 ul {
     list-style-type: none;
 }
-
+/*this leaves our elements in the navbar without bullet points.*/
 li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/*This display type allows the width to be set and for the list items to be displayed side by side and at the same level as the main header rather than 
+each content box being the width of the page and each item being on top of one another in a column. Also setting the margin to 25 pixels means there
+will be that much space to the left of the content box, pushing other content away even if it is set to a smaller margin, as they would collapse together.*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/*all <a> elements will have white font and leaves the text plain (no changes to add decorations such as underlining, thickness, etc).*/
 p {
     font-size: 16px;
 }
-
+/*all <p> elements will be 16 pixel font.*/
 h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/*all h3 header elements will push away other elements by 10 pixels from the bottom edge of the content and the text will be centered
+ in the box (of the content).*/
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
+/*the footer text will have 30 pixels of space between the top of the text and the top of the content box. The preferred font selected 
+is 'Trebuchet MS' but as previously mentioned the browser will go down the list from left to right if the right font cannot be applied
+ in said browser. This text will be centered in the content box.*/
 footer h2 {
     font-size: 20px;
 }
-
+/*This sets the font of the footer text: 'Made with ❤️ by horiseon' to a 20 pixel font. */
 .benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/*the block display forces the content to be stacked on eachother as each content box takes up the entire width available. The margin is set to 10 pixels
+on each side and the content will not be displayed any bigger than 150 pixels.*/
 .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
     max-height: 200px;
 }
-
+/*sets the maximum height allowed of the images all to 200 pixels*/
 .search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/*this sets the headers for these articles to have a font size of 36 pixels and a bottom margin (it pushes away other content from the 
+bottom edge of it's own content) of 20 pixels. */
 .seo {
     color: #d9dcd6;
 }
-
+/*The color of the letters 'seo' in the main header 'horiseon' to be a different color the rest of the letters because it has a separate 
+class which is more specific and overrides the text color of the h1 header in the <heading> section.*/
 .hero {
     height: 800px;
     width: 100%;
@@ -89,23 +109,29 @@ footer h2 {
     background-size: cover;
     background-position: center;
 }
-
+/*This sets the image as a background that is 800 pixels wide and as wide as the screen no matter what. the image is in front of the 
+background color and is centered on the page. Also the bottom margin leaves 25 pixels of room between the bottom of the image 
+(the content) and the top of the 'Search Engine Optimization' article as well as the <aside> section.*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/*The two images with the class will be made to float in the left-hand side of the content box and have a margin of 25 pixels, pushing
+ away any content on the right-hand side. In this case, there's 25 pixels between the image and the text next to it.*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/*The image with this class floats in the right side of the content box and there is 25 pixels of margin between itself and the text place
+ next to it in the same article.*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/*the width of each article content box within the section element is set to 75% which adjusts with the size of the page. Also the article
+ content boxes will be placed 20 pixels from the left side of the page. The display type allows the image to be next to the h3 headers and text in the <p>
+ elements rather than everything being on top of one another. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -116,12 +142,18 @@ footer h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/*The content box for the aside section, which has been given the class of benefits, will be placed 20 pixels away from the right side of the page
+with 20 more pixels of space inside of the box (padding) on all sides around the content of each section. The width of the aside element 
+(which has the class of benefits) will only take up 20% of the page and will adjust with screen size while the height which is set to 100% 
+can only take up space it is allowed (it is restricted by other content and their margins). The preferred font family (going in order
+from left to right) is 'Gill sans' and that is the font that will be applied by the browser if possible. The background color for this 
+section is blue (#2589bd).*/
 .benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
+/*Each article in the aside element is set to have white font and 32 pixels underneath the content box, pushing away the content 
+beneath it.*/
 .search-engine-optimization, .online-reputation-management, .social-media-marketing  {
     margin-bottom: 20px;
     padding: 50px;
@@ -130,3 +162,6 @@ footer h2 {
     background-color: #0072bb;
     color: #ffffff;
 }
+/*Each article in the section element is set to have white font and a blue (#0072bb) background color.  Each content box has a 300 pixel
+height and is set to have 20 pixels of space beneath the content box and 50 pixels of padding inside each box inside the borders. The preffered font is 
+'Gill Sans', but the browser may go down the line from left to right applying the first font that can be applied in said browser.*/
