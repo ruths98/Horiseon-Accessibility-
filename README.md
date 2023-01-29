@@ -9,7 +9,7 @@ This project does not require installation.
 
 ## Usage
 To access the website, use the following url:
-
+https://ruths98.github.io/Horiseon-Accessibility-/#social-media-marketing
 ![Screenshot.1](horiseon1.png)
 ![Screenshot.2](horiseon2.png)
 ![Screenshot.3](horiseon3.png)
