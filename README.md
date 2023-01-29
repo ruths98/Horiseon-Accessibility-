@@ -9,7 +9,10 @@ This project does not require installation.
 
 ## Usage
 To access the website, use the following url:
-![Screenshot](filepath)
+![Screenshot.1](C:\Users\ruth9\bootcamp\Horiseon-Accessibility-\horiseon1.png)
+![Screenshot.2](C:\Users\ruth9\bootcamp\Horiseon-Accessibility-\horiseon2.png)
+![Screenshot.3](C:\Users\ruth9\bootcamp\Horiseon-Accessibility-\horiseon3.png)
+![Screenshot.4](C:\Users\ruth9\bootcamp\Horiseon-Accessibility-\horiseon4.png)
 
 ## License
 
