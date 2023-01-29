@@ -7,15 +7,16 @@
  (i.e. classes and id's)*/
 
 body {
-    background-color: #d9dcd6;
+    background-color: #bfc2bd;
 }
 /*this sets the background color behind the background image, the <section> elements, and the <aside> elements to a pale gray-ish color.*/
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: #2c434e;
     color: #ffffff;
+    border-bottom: 1px solid white;
 }
 /*sets the padding for the header element, which includes the h1 header and the nav elements, to 20px. The same elements are also assigned
  the font family 'Trebuchet MS' as the preffered font and going from left to right, the browser will apply the first font it is able to.
@@ -24,7 +25,7 @@ more specific selector (#seon) change the 'seon' to a gray color.*/
 
 h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 48px;  
 }
 /*This sets the main header 'horiseon' to have a font size of 48 pixels and sets the display type to inline-block. If the display was just 'block' then
 the navbar content would not be able to sit on the same level as the main header and would have to be beneath it. inline-block allows us to define the 
@@ -40,23 +41,23 @@ nav {
 /*this sets the prefered font for our navbar titles as 'Gill sans', the font size is set to 20 pixels, and the elements are set to float 
 in the right-hand side of its container. Also, a top padding is added as well as a margin. the padding will leave 15 pixels between the
  top of the text and the top of the container and the margin will push away other elements on the right side by 20 pixels. */
-ul {
+nav ul {
     list-style-type: none;
 }
 /*this leaves our elements in the navbar without bullet points.*/
-li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 /*This display type allows the width to be set and for the list items to be displayed side by side and at the same level as the main header rather than 
 each content box being the width of the page and each item being on top of one another in a column. Also setting the margin to 25 pixels means there
 will be that much space to the left of the content box, pushing other content away even if it is set to a smaller margin, as they would collapse together.*/
-a {
+nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 /*all <a> elements will have white font and leaves the text plain (no changes to add decorations such as underlining, thickness, etc).*/
-p {
+section article p {
     font-size: 16px;
 }
 /*all <p> elements will be 16 pixel font.*/
@@ -71,6 +72,7 @@ footer {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    color:#2c434e
 }
 /*the footer text will have 30 pixels of space between the top of the text and the top of the content box. The preferred font selected 
 is 'Trebuchet MS' but as previously mentioned the browser will go down the list from left to right if the right font cannot be applied
@@ -97,7 +99,7 @@ on each side and the content will not be displayed any bigger than 150 pixels.*/
 /*this sets the headers for these articles to have a font size of 36 pixels and a bottom margin (it pushes away other content from the 
 bottom edge of it's own content) of 20 pixels. */
 .seo {
-    color: #d9dcd6;
+    color: #bfc2bd;
 }
 /*The color of the letters 'seo' in the main header 'horiseon' to be a different color the rest of the letters because it has a separate 
 class which is more specific and overrides the text color of the h1 header in the <heading> section.*/
@@ -115,12 +117,14 @@ background color and is centered on the page. Also the bottom margin leaves 25 p
 .float-left {
     float: left;
     margin-right: 25px;
+    border: 1px solid white;
 }
 /*The two images with the class will be made to float in the left-hand side of the content box and have a margin of 25 pixels, pushing
  away any content on the right-hand side. In this case, there's 25 pixels between the image and the text next to it.*/
 .float-right {
     float: right;
     margin-left: 25px;
+    border: 1px solid white;
 }
 /*The image with this class floats in the right side of the content box and there is 25 pixels of margin between itself and the text place
  next to it in the same article.*/
@@ -140,7 +144,8 @@ background color and is centered on the page. Also the bottom margin leaves 25 p
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #3d667c;
+    border-radius: 10px;
 }
 /*The content box for the aside section, which has been given the class of benefits, will be placed 20 pixels away from the right side of the page
 with 20 more pixels of space inside of the box (padding) on all sides around the content of each section. The width of the aside element 
@@ -159,8 +164,9 @@ beneath it.*/
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #5b7885;
     color: #ffffff;
+    border-radius: 10px;
 }
 /*Each article in the section element is set to have white font and a blue (#0072bb) background color.  Each content box has a 300 pixel
 height and is set to have 20 pixels of space beneath the content box and 50 pixels of padding inside each box inside the borders. The preffered font is 
